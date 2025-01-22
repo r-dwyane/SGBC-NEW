@@ -1,0 +1,173 @@
+body {
+    font-family: 'Montserrat';
+    background-color: #FDFAED;
+    overflow-x: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+.sidenav-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: row;
+    transition: all 0.3s ease;
+}
+
+.sidenav {
+    width: 275px;
+    background-color: #F6F3E4;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(1, 0, 0, 1), 
+            -5px -5px 10px rgba(255, 255, 255, 0.1); 
+    transition: all 0.3s ease;
+}
+
+h2 {
+    margin: 50px auto;
+    font-weight: 400;
+    color: #191818;
+}
+
+.sidenav-title {
+    font-size: 0.9rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-weight: 450;
+    color: #5B5B5B;
+    opacity: 0.5;
+}
+
+.sidenav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sidenav-links li {
+    margin-bottom: 15px;
+}
+
+.sidenav-links a {
+    text-decoration: none;
+    color: #5B5B5B;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidenav-links a .sidenav-icon {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.sidenav-links a.active {
+    color: #F6F3E4;
+    background-color: #FFAE42;
+}
+
+.sidenav-links a:hover {
+    background-color: #FFAE42;
+    color: #F6F3E4;
+}
+
+.sidenav-links a:hover .sidenav-icon,
+.sidenav-links a.active .sidenav-icon {
+    filter: brightness(0) invert(1);
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ecf0f1;
+    overflow-y: auto;
+}
+
+/* Logout Button Styles */
+.logout-btn {
+    background-color: #F6F3E4;
+    color: #5B5B5B;
+    padding: 10px 20px;
+    margin-top: 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.logout-btn:hover {
+    background-color: #FFAE42;
+    color: #F6F3E4;
+}
+
+.logout-btn:hover .icon {
+    filter: brightness(0) invert(1);
+}
+
+@media (max-width: 768px) {
+    .sidenav-container {
+        flex-direction: column;
+    }
+
+    .sidenav {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    .sidenav-title {
+        font-size: 1rem;
+        margin-top: 30px;
+    }
+
+    .sidenav-links a {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .logout-btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidenav-links a {
+        font-size: 0.95rem;
+        padding: 8px 12px;
+    }
+
+    .logout-btn {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    .sidenav-title {
+        font-size: 0.8rem;
+        margin-top: 20px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
