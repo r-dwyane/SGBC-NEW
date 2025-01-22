@@ -1,6 +1,7 @@
 {
   "name": "sgbc",
   "private": true,
+  "homepage": "https://r-dwyane.github.io/SGBC-NEW"
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -9,7 +10,6 @@
     "lint": "eslint .",
     "preview": "vite preview"
     "deploy": "gh-pages -d build"
-    "homepage": "https://r-dwyane.github.io/SGBC-NEW"
   },
   "dependencies": {
     "react": "^18.3.1",
