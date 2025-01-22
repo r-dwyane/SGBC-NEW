@@ -8,6 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
+    "homepage": "https://r-dwyane.github.io/SGBC-NEW"
   },
   "dependencies": {
     "react": "^18.3.1",
