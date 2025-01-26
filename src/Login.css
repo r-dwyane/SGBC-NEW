@@ -52,6 +52,7 @@ input {
     color: #191818;
     transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
     box-sizing: border-box;
+    font-family: 'Montserrat';
 }
 
 label {
@@ -70,7 +71,7 @@ label {
 input:focus, 
 input:valid {
     outline: none;
-    border: 1.5px solid #191818;
+    border: 1.5px solid #FFAE42;
 }
 
 input:focus ~ label, 
@@ -78,7 +79,8 @@ input:valid ~ label {
     top: -0.5rem;
     left: 1rem;
     transform: translateY(0) scale(0.9);
-    color: #191818;
+    color: #FFAE42;
+    font-weight: 600;
 }
 .error-message {
     color: red;

@@ -16,7 +16,7 @@ const Login = () => {
 
     if (username === validUsername && password === validPassword) {
       setErrorMessage("");
-      navigate("/dashboard"); // Navigate to the dashboard page
+      navigate("/dashboard");
     } else {
       setErrorMessage("Invalid username or password");
     }
